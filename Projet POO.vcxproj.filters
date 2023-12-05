@@ -24,7 +24,7 @@
     <ClCompile Include="UcHome.cpp">
       <Filter>UserControls</Filter>
     </ClCompile>
-    <ClCompile Include="Personnel.cpp">
+    <ClCompile Include="FPersonnel.cpp">
       <Filter>UserControls</Filter>
     </ClCompile>
     <ClCompile Include="FCommande.cpp">
@@ -36,6 +36,9 @@
     <ClCompile Include="FStat.cpp">
       <Filter>UserControls</Filter>
     </ClCompile>
+    <ClCompile Include="FAcceuil.cpp">
+      <Filter>UserControls</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FormAcceuil.h">
@@ -44,7 +47,7 @@
     <ClInclude Include="UcHome.h">
       <Filter>UserControls</Filter>
     </ClInclude>
-    <ClInclude Include="Personnel.h">
+    <ClInclude Include="FPersonnel.h">
       <Filter>UserControls</Filter>
     </ClInclude>
     <ClInclude Include="FCommande.h">
@@ -54,6 +57,9 @@
       <Filter>UserControls</Filter>
     </ClInclude>
     <ClInclude Include="FStat.h">
+      <Filter>UserControls</Filter>
+    </ClInclude>
+    <ClInclude Include="FAcceuil.h">
       <Filter>UserControls</Filter>
     </ClInclude>
   </ItemGroup>

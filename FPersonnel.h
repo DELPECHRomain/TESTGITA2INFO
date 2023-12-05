@@ -13,10 +13,10 @@ namespace ProjetPOO {
 	/// <summary>
 	/// Description résumée de Personnel
 	/// </summary>
-	public ref class Personnel : public System::Windows::Forms::UserControl
+	public ref class FPersonnel : public System::Windows::Forms::UserControl
 	{
 	public:
-		Personnel(void)
+		FPersonnel(void)
 		{
 			InitializeComponent();
 			//
@@ -28,7 +28,7 @@ namespace ProjetPOO {
 		/// <summary>
 		/// Nettoyage des ressources utilisées.
 		/// </summary>
-		~Personnel()
+		~FPersonnel()
 		{
 			if (components)
 			{
@@ -75,6 +75,7 @@ namespace ProjetPOO {
 			this->button4->TabIndex = 20;
 			this->button4->Text = L"Supprimer un Personnel";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &FPersonnel::button4_Click);
 			// 
 			// button3
 			// 
@@ -121,7 +122,7 @@ namespace ProjetPOO {
 			this->label2->Size = System::Drawing::Size(155, 34);
 			this->label2->TabIndex = 15;
 			this->label2->Text = L"Personnel";
-			this->label2->Click += gcnew System::EventHandler(this, &Personnel::label2_Click);
+			this->label2->Click += gcnew System::EventHandler(this, &FPersonnel::label2_Click);
 			// 
 			// Personnel
 			// 
@@ -144,5 +145,7 @@ namespace ProjetPOO {
 #pragma endregion
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
