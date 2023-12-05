@@ -69,6 +69,7 @@ namespace ProjetPOO {
 			// 
 			// button4
 			// 
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->Location = System::Drawing::Point(460, 348);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(190, 42);
@@ -78,6 +79,7 @@ namespace ProjetPOO {
 			// 
 			// button3
 			// 
+			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button3->Location = System::Drawing::Point(231, 347);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(190, 44);
@@ -87,6 +89,7 @@ namespace ProjetPOO {
 			// 
 			// button2
 			// 
+			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button2->Location = System::Drawing::Point(3, 347);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(190, 44);
@@ -96,6 +99,7 @@ namespace ProjetPOO {
 			// 
 			// button1
 			// 
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button1->Location = System::Drawing::Point(691, 349);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(190, 42);

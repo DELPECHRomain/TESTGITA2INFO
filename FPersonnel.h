@@ -69,6 +69,7 @@ namespace ProjetPOO {
 			// 
 			// button4
 			// 
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->Location = System::Drawing::Point(460, 348);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(190, 42);
@@ -79,6 +80,7 @@ namespace ProjetPOO {
 			// 
 			// button3
 			// 
+			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button3->Location = System::Drawing::Point(231, 347);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(190, 44);
@@ -88,6 +90,7 @@ namespace ProjetPOO {
 			// 
 			// button2
 			// 
+			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button2->Location = System::Drawing::Point(3, 347);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(190, 44);
@@ -97,6 +100,7 @@ namespace ProjetPOO {
 			// 
 			// button1
 			// 
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button1->Location = System::Drawing::Point(691, 349);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(190, 42);
@@ -124,7 +128,7 @@ namespace ProjetPOO {
 			this->label2->Text = L"Personnel";
 			this->label2->Click += gcnew System::EventHandler(this, &FPersonnel::label2_Click);
 			// 
-			// Personnel
+			// FPersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -135,7 +139,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->label2);
 			this->MinimumSize = System::Drawing::Size(884, 427);
-			this->Name = L"Personnel";
+			this->Name = L"FPersonnel";
 			this->Size = System::Drawing::Size(884, 427);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
