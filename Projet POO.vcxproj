@@ -120,14 +120,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Acceuil.cpp" />
     <ClCompile Include="FCommande.cpp" />
     <ClCompile Include="FormAcceuil.cpp" />
     <ClCompile Include="FStat.cpp" />
     <ClCompile Include="FStock.cpp" />
-    <ClCompile Include="Personnel.cpp" />
+    <ClCompile Include="FPersonnel.cpp" />
     <ClCompile Include="UcHome.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Acceuil.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="FCommande.h">
       <FileType>CppControl</FileType>
     </ClInclude>
@@ -140,7 +144,7 @@
     <ClInclude Include="FStock.h">
       <FileType>CppControl</FileType>
     </ClInclude>
-    <ClInclude Include="Personnel.h">
+    <ClInclude Include="FPersonnel.h">
       <FileType>CppControl</FileType>
     </ClInclude>
     <ClInclude Include="UcHome.h">
@@ -148,6 +152,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Acceuil.resx">
+      <DependentUpon>Acceuil.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FCommande.resx">
       <DependentUpon>FCommande.h</DependentUpon>
     </EmbeddedResource>
@@ -160,8 +167,8 @@
     <EmbeddedResource Include="FStock.resx">
       <DependentUpon>FStock.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Personnel.resx">
-      <DependentUpon>Personnel.h</DependentUpon>
+    <EmbeddedResource Include="FPersonnel.resx">
+      <DependentUpon>FPersonnel.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UcHome.resx">
       <DependentUpon>UcHome.h</DependentUpon>

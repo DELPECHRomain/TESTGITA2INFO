@@ -1,9 +1,10 @@
 #pragma once
-#include "Personnel.h"
+#include "FPersonnel.h"
 #include "FCommande.h"
 #include "FStat.h"
 #include "FStock.h"
 #include "UcHome.h"
+#include "Acceuil.h"
 
 namespace ProjetPOO {
 
@@ -26,6 +27,8 @@ namespace ProjetPOO {
 			//
 			//TODO: ajoutez ici le code du constructeur
 			//
+			Acceuil^ acc = gcnew Acceuil();
+			addUserControl(acc);
 			
 		}
 
@@ -47,10 +50,11 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::Panel^ panel1;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::Panel^ panelContainer;
+	private: System::Windows::Forms::Button^ button6;
 
 
 
@@ -75,12 +79,11 @@ namespace ProjetPOO {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panelContainer = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->panel2->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -88,6 +91,8 @@ namespace ProjetPOO {
 			// 
 			this->button1->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1->FlatAppearance->BorderSize = 0;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(0, 0);
@@ -102,6 +107,8 @@ namespace ProjetPOO {
 			// 
 			this->button2->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2->FlatAppearance->BorderSize = 0;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->Location = System::Drawing::Point(176, 0);
@@ -116,6 +123,8 @@ namespace ProjetPOO {
 			// 
 			this->button3->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button3->FlatAppearance->BorderSize = 0;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->Location = System::Drawing::Point(355, 0);
@@ -130,6 +139,8 @@ namespace ProjetPOO {
 			// 
 			this->button4->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button4->FlatAppearance->BorderSize = 0;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button4->Location = System::Drawing::Point(534, 0);
@@ -144,6 +155,8 @@ namespace ProjetPOO {
 			// 
 			this->button5->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button5->FlatAppearance->BorderSize = 0;
+			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button5->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button5->Location = System::Drawing::Point(701, 0);
@@ -156,14 +169,34 @@ namespace ProjetPOO {
 			// 
 			// panel1
 			// 
-			this->panel1->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panel1->BackColor = System::Drawing::Color::Gray;
+			this->panel1->Controls->Add(this->button6);
 			this->panel1->Controls->Add(this->label1);
-			this->panel1->Controls->Add(this->pictureBox1);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(884, 123);
 			this->panel1->TabIndex = 5;
+			// 
+			// button6
+			// 
+			this->button6->AccessibleRole = System::Windows::Forms::AccessibleRole::None;
+			this->button6->BackColor = System::Drawing::Color::Gray;
+			this->button6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button6.BackgroundImage")));
+			this->button6->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->button6->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button6->FlatAppearance->BorderColor = System::Drawing::Color::Gray;
+			this->button6->FlatAppearance->BorderSize = 0;
+			this->button6->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Gray;
+			this->button6->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Gray;
+			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button6->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button6->Location = System::Drawing::Point(12, 0);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(106, 120);
+			this->button6->TabIndex = 8;
+			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &FormAcceuil::button6_Click);
 			// 
 			// label1
 			// 
@@ -176,17 +209,6 @@ namespace ProjetPOO {
 			this->label1->TabIndex = 7;
 			this->label1->Text = L"Application de Gestion CESI Tech Trade";
 			this->label1->Click += gcnew System::EventHandler(this, &FormAcceuil::label1_Click);
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
-			this->pictureBox1->Cursor = System::Windows::Forms::Cursors::Arrow;
-			this->pictureBox1->Location = System::Drawing::Point(26, 3);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(110, 120);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
-			this->pictureBox1->TabIndex = 6;
-			this->pictureBox1->TabStop = false;
 			// 
 			// panel2
 			// 
@@ -222,7 +244,6 @@ namespace ProjetPOO {
 			this->Text = L"CESI Tech Trade ";
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->panel2->ResumeLayout(false);
 			this->ResumeLayout(false);
 
@@ -246,7 +267,7 @@ namespace ProjetPOO {
 
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		Personnel^ per = gcnew Personnel();
+		FPersonnel^ per = gcnew FPersonnel();
 		addUserControl(per);
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -263,5 +284,10 @@ namespace ProjetPOO {
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	Acceuil^ acc = gcnew Acceuil();
+	addUserControl(acc);
+	
+}
 };
 }

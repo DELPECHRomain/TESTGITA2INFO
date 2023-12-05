@@ -11,12 +11,12 @@ using namespace System::Drawing;
 namespace ProjetPOO {
 
 	/// <summary>
-	/// Description résumée de Personnel
+	/// Description résumée de FPersonnel
 	/// </summary>
-	public ref class Personnel : public System::Windows::Forms::UserControl
+	public ref class FPersonnel : public System::Windows::Forms::UserControl
 	{
 	public:
-		Personnel(void)
+		FPersonnel(void)
 		{
 			InitializeComponent();
 			//
@@ -28,7 +28,7 @@ namespace ProjetPOO {
 		/// <summary>
 		/// Nettoyage des ressources utilisées.
 		/// </summary>
-		~Personnel()
+		~FPersonnel()
 		{
 			if (components)
 			{
@@ -121,9 +121,9 @@ namespace ProjetPOO {
 			this->label2->Size = System::Drawing::Size(155, 34);
 			this->label2->TabIndex = 15;
 			this->label2->Text = L"Personnel";
-			this->label2->Click += gcnew System::EventHandler(this, &Personnel::label2_Click);
+			this->label2->Click += gcnew System::EventHandler(this, &FPersonnel::label2_Click);
 			// 
-			// Personnel
+			// FPersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
