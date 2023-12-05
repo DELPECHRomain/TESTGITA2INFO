@@ -111,9 +111,9 @@ namespace ProjetPOO {
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(176, 0);
+			this->button2->Location = System::Drawing::Point(178, 0);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(183, 58);
+			this->button2->Size = System::Drawing::Size(179, 55);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Gestion du Personnel";
 			this->button2->UseVisualStyleBackColor = false;
@@ -145,7 +145,7 @@ namespace ProjetPOO {
 				static_cast<System::Byte>(0)));
 			this->button4->Location = System::Drawing::Point(534, 0);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(183, 58);
+			this->button4->Size = System::Drawing::Size(180, 58);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Gestion des Commandes";
 			this->button4->UseVisualStyleBackColor = false;
