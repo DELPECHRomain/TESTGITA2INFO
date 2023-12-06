@@ -36,6 +36,7 @@ namespace ProjetPOO {
 			}
 		}
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::ComboBox^ comboBox1;
 
 
 
@@ -57,6 +58,7 @@ namespace ProjetPOO {
 		void InitializeComponent(void)
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -70,10 +72,21 @@ namespace ProjetPOO {
 			this->label1->TabIndex = 9;
 			this->label1->Text = L"Commande";
 			// 
+			// comboBox1
+			// 
+			this->comboBox1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(9, 57);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 10;
+			this->comboBox1->Text = L"Choisir un ID";
+			// 
 			// FCommande
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->label1);
 			this->MinimumSize = System::Drawing::Size(884, 427);
 			this->Name = L"FCommande";

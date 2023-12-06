@@ -6,6 +6,8 @@ using namespace System::Collections;
 using namespace System::Windows::Forms;
 using namespace System::Data;
 using namespace System::Drawing;
+using namespace System::Data::SqlClient;
+
 
 
 namespace ProjetPOO {
@@ -42,6 +44,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::ComboBox^ comboBox1;
 
 	protected:
 
@@ -64,6 +67,7 @@ namespace ProjetPOO {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -113,7 +117,7 @@ namespace ProjetPOO {
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(3, 37);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(878, 304);
+			this->dataGridView1->Size = System::Drawing::Size(647, 304);
 			this->dataGridView1->TabIndex = 16;
 			// 
 			// label2
@@ -128,10 +132,21 @@ namespace ProjetPOO {
 			this->label2->Text = L"Personnel";
 			this->label2->Click += gcnew System::EventHandler(this, &FPersonnel::label2_Click);
 			// 
+			// comboBox1
+			// 
+			this->comboBox1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(691, 66);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 21;
+			this->comboBox1->Text = L"Choisir un ID ";
+			// 
 			// FPersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -151,5 +166,6 @@ namespace ProjetPOO {
 	}
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+
 };
 }

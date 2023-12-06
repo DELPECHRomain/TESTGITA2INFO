@@ -6,6 +6,8 @@ using namespace System::Collections;
 using namespace System::Windows::Forms;
 using namespace System::Data;
 using namespace System::Drawing;
+using namespace System::Data::SqlClient;
+
 
 
 namespace ProjetPOO {
@@ -42,6 +44,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::ComboBox^ comboBox1;
 
 	protected:
 
@@ -64,6 +67,7 @@ namespace ProjetPOO {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -109,10 +113,11 @@ namespace ProjetPOO {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(3, 37);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(878, 304);
+			this->dataGridView1->Size = System::Drawing::Size(647, 304);
 			this->dataGridView1->TabIndex = 22;
 			// 
 			// label2
@@ -126,10 +131,21 @@ namespace ProjetPOO {
 			this->label2->TabIndex = 21;
 			this->label2->Text = L"Stock";
 			// 
+			// comboBox1
+			// 
+			this->comboBox1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(691, 78);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(150, 21);
+			this->comboBox1->TabIndex = 27;
+			this->comboBox1->Text = L"Choisir un ID";
+			// 
 			// FStock
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -144,6 +160,6 @@ namespace ProjetPOO {
 			this->PerformLayout();
 
 		}
-#pragma endregion
-	};
+
+};
 }
