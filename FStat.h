@@ -58,6 +58,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::TextBox^ textBox5;
 	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	protected:
 
 	private:
@@ -95,6 +96,8 @@ namespace ProjetPOO {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -312,10 +315,19 @@ namespace ProjetPOO {
 			this->label7->TabIndex = 31;
 			this->label7->Text = L"Valeur du Stock (€)";
 			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(296, 53);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(530, 227);
+			this->dataGridView1->TabIndex = 32;
+			// 
 			// FStat
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->textBox5);
 			this->Controls->Add(this->label6);
@@ -341,6 +353,7 @@ namespace ProjetPOO {
 			this->MinimumSize = System::Drawing::Size(884, 427);
 			this->Name = L"FStat";
 			this->Size = System::Drawing::Size(884, 427);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
