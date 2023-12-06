@@ -45,6 +45,18 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker2;
+	private: System::Windows::Forms::Label^ label7;
 
 	protected:
 
@@ -68,6 +80,18 @@ namespace ProjetPOO {
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->dateTimePicker2 = (gcnew System::Windows::Forms::DateTimePicker());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -114,6 +138,7 @@ namespace ProjetPOO {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(3, 37);
 			this->dataGridView1->Name = L"dataGridView1";
@@ -136,16 +161,141 @@ namespace ProjetPOO {
 			// 
 			this->comboBox1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(691, 66);
+			this->comboBox1->Location = System::Drawing::Point(656, 37);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 21);
 			this->comboBox1->TabIndex = 21;
 			this->comboBox1->Text = L"Choisir un ID ";
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(656, 83);
+			this->textBox1->MaxLength = 50;
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(100, 20);
+			this->textBox1->TabIndex = 22;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(656, 129);
+			this->textBox2->MaxLength = 50;
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(100, 20);
+			this->textBox2->TabIndex = 23;
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(656, 173);
+			this->textBox3->MaxLength = 50;
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(100, 20);
+			this->textBox3->TabIndex = 24;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(656, 217);
+			this->textBox4->MaxLength = 50;
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(100, 20);
+			this->textBox4->TabIndex = 25;
+			// 
+			// dateTimePicker1
+			// 
+			this->dateTimePicker1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->dateTimePicker1->Location = System::Drawing::Point(656, 267);
+			this->dateTimePicker1->Name = L"dateTimePicker1";
+			this->dateTimePicker1->Size = System::Drawing::Size(200, 20);
+			this->dateTimePicker1->TabIndex = 26;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(656, 67);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(63, 14);
+			this->label1->TabIndex = 27;
+			this->label1->Text = L"Entrer un ID";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Arial", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(656, 112);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(90, 14);
+			this->label3->TabIndex = 28;
+			this->label3->Text = L"Entrer un Prénom";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Arial", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(656, 156);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(75, 14);
+			this->label4->TabIndex = 29;
+			this->label4->Text = L"Entrer un Nom";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Arial", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(656, 200);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(91, 14);
+			this->label5->TabIndex = 30;
+			this->label5->Text = L"Entrer un ID Supp";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Arial", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(656, 250);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(142, 14);
+			this->label6->TabIndex = 31;
+			this->label6->Text = L"Entrer une date d\'embauche";
+			// 
+			// dateTimePicker2
+			// 
+			this->dateTimePicker2->Location = System::Drawing::Point(656, 321);
+			this->dateTimePicker2->Name = L"dateTimePicker2";
+			this->dateTimePicker2->Size = System::Drawing::Size(200, 20);
+			this->dateTimePicker2->TabIndex = 32;
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Arial", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->Location = System::Drawing::Point(656, 304);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(149, 14);
+			this->label7->TabIndex = 33;
+			this->label7->Text = L"Entrer une date de naissance";
+			// 
 			// FPersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->dateTimePicker2);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->dateTimePicker1);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);

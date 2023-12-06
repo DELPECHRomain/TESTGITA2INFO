@@ -237,6 +237,7 @@ namespace ProjetPOO {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(11, 347);
+			this->textBox1->MaxLength = 3;
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(84, 20);
 			this->textBox1->TabIndex = 23;
@@ -244,6 +245,7 @@ namespace ProjetPOO {
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(138, 347);
+			this->textBox2->MaxLength = 3;
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(114, 20);
 			this->textBox2->TabIndex = 24;
@@ -273,6 +275,7 @@ namespace ProjetPOO {
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(296, 347);
+			this->textBox3->MaxLength = 3;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(119, 20);
 			this->textBox3->TabIndex = 27;
@@ -280,6 +283,7 @@ namespace ProjetPOO {
 			// textBox4
 			// 
 			this->textBox4->Location = System::Drawing::Point(465, 347);
+			this->textBox4->MaxLength = 3;
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(119, 20);
 			this->textBox4->TabIndex = 28;
@@ -317,6 +321,7 @@ namespace ProjetPOO {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(296, 53);
 			this->dataGridView1->Name = L"dataGridView1";
